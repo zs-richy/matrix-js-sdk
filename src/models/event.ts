@@ -884,7 +884,8 @@ export class MatrixEvent extends EventEmitter {
                 type: EventType.RoomMessage,
                 content: {
                     msgtype: "m.bad.encrypted",
-                    body: "** Unable to decrypt: " + reason + " **",
+                    // body: "** Üzenet visszafejtése sikertelen! " + reason + " **",
+                    body: "** Üzenet visszafejtése sikertelen! **"
                 },
             },
         };
